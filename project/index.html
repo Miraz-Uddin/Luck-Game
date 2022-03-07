@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Custom Style  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+
+    <title>Luck Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12">
+          <div id="message" class="w-25"></div>
+          <h1>Let's play a Luck Game</h1>
+          <p>Lucky Number : <span id="luckyNumberValue">0</span></p>
+          <br />
+          <table cellspacing="1" cellpadding="1">
+            <tr>
+              <th>Player - 1</th>
+              <th>Player - 2</th>
+            </tr>
+            <tr>
+              <td><p class="text-center text-primary" id="player1">0</p></td>
+              <td><p class="text-center text-secondary" id="player2">0</p></td>
+            </tr>
+          </table>
+          <br />
+          <form>
+            <input
+              type="number"
+              id="luckyNumberInput"
+              style="vertical-align: bottom"
+            />
+            <input type="submit" value="Submit" class="btn btn-info btn-sm" />
+            <input type="button" value="Reset" class="btn btn-danger btn-sm" />
+          </form>
+          <br />
+          <button class="btn btn-outline-primary" id="player1Btn">
+            Player 1
+          </button>
+          <button class="btn btn-outline-secondary" id="player2Btn">
+            Player 2
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
